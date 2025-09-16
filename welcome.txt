@@ -1,0 +1,3 @@
+q - quit 
+[a]dd - dodaj molekulu
+[s]tart - upali http server
