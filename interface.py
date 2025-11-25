@@ -1,24 +1,25 @@
-from getHtml import getHtml
-import server
+from src.services.getHtml import getHtml
+import src.services.server as server
 import pathlib
 import qrcode
 
 path = "molecules"
 adderess ="10.0.4.141:8000"
 
-welcome=open("welcome.txt", "r").read()
+welcome=open("src/components/welcome.txt", "r").read()
 print(welcome)
 
 task = input("> ")
 while task!="q" and task!="Q":
     if task == "a" or task == "add":
         #html
+        title=input("Naslov: ")
         smiles = input("SMILES molekule: ")
         notes = input("Opis: ")
         name=pathlib.Path(smiles)
         with open(f"{path}/html/{name}.html", "w") as f:
-            f.write(getHtml(smiles=smiles,width="100%",height="50%"))
-            f.write(notes)
+            f.write(getHtml(smiles=smiles,title=title, notes=notes))
+            
         
         #qr
         url = f"http://{adderess}/{name}.html"

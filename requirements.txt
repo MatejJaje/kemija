@@ -1,3 +1,2 @@
 rdkit 
-py3Dmol
 qrcode[pil]
