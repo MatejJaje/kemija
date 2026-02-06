@@ -1,0 +1,26 @@
+<html><head>
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+  <h1>Adrenalin</h1>
+  <div id="3dmolviewer"  style="position: relative; width: 100%; height: 50%;">
+          <p id="3dmolwarning" style="background-color:#ffcccc;color:black">3Dmol.js failed to load for some reason.  Please check your browser console for error messages.<br></p>
+  </div>
+  <p>adrenalin</p>
+
+  <script src="/src/components/init3dMol.js"></script>
+
+  <script>
+  $3Dmolpromise.then(function() {
+  viewer = $3Dmol.createViewer(document.getElementById("3dmolviewer"));
+  viewer.zoomTo();
+    viewer.addModel("\n     RDKit          3D\n\n 26 26  0  0  0  0  0  0  0  0999 V2000\n   -3.2444    1.0785    0.4548 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.0663    0.3129    0.8700 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.9896   -0.9867    0.1799 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.9965   -0.9404   -0.9923 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.3982   -0.5898   -0.5115 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7980    0.7496   -0.3623 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.0747    1.0711    0.1152 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.9715    0.0323    0.4600 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.5645   -1.2995    0.3245 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2894   -1.6105   -0.1507 C   0  0  0  0  0  0  0  0  0  0  0  0\n    4.2608    0.2754    0.9381 O   0  0  0  0  0  0  0  0  0  0  0  0\n    2.4054    2.4227    0.2328 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.4390   -0.0272   -1.9632 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -4.1800    0.5404    0.7242 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.2432    2.0607    0.9724 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.2243    1.2687   -0.6384 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.1609    0.1348    1.8975 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.6430   -1.7665    0.8959 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.9853   -1.3241   -0.1893 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.9814   -1.9586   -1.4481 H   0  0  0  0  0  0  0  0  0  0  0  0\n    0.1146    1.5514   -0.6139 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.2422   -2.1003    0.5928 H   0  0  0  0  0  0  0  0  0  0  0  0\n    0.9968   -2.6497   -0.2362 H   0  0  0  0  0  0  0  0  0  0  0  0\n    4.6505    1.1979    1.0669 H   0  0  0  0  0  0  0  0  0  0  0  0\n    3.2952    2.7589    0.5715 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.9078   -0.2020   -2.7840 H   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\n  3  4  1  0\n  4  5  1  0\n  5  6  2  0\n  6  7  1  0\n  7  8  2  0\n  8  9  1  0\n  9 10  2  0\n  8 11  1  0\n  7 12  1  0\n  4 13  1  0\n 10  5  1  0\n  1 14  1  0\n  1 15  1  0\n  1 16  1  0\n  2 17  1  0\n  3 18  1  0\n  3 19  1  0\n  4 20  1  0\n  6 21  1  0\n  9 22  1  0\n 10 23  1  0\n 11 24  1  0\n 12 25  1  0\n 13 26  1  0\nM  END\n","sdf");
+    viewer.setStyle({"stick": {"radius": 0.2}, "sphere": {"scale": 0.3}});
+    viewer.zoomTo();
+    viewer.spin(true);
+  viewer.render();
+  });
+  </script>
+
+</body></html>
+
