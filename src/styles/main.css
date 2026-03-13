@@ -1,9 +1,31 @@
 body {
-  background-color: powderblue;
-}
-h1 {
-  color: darkblue;
-}
-p {
-  color: red;
-}
+        background-color: powderblue;
+    }
+    h1 {
+        color: darkblue;
+    }
+    p {
+        color: red;
+    }
+    
+    /* 3D MOL VIEWER */
+    #3dmolviewer {
+      grid-area: viewer;
+    
+      min-height: 500px;
+      background: white;
+      border-radius: 12px;
+    }
+    
+    /* OPIS */
+    p,ul,h3,img {
+      grid-area: opis;
+    
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 1rem;
+    
+      color: black;
+      line-height: 1.5;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
