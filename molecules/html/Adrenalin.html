@@ -71,8 +71,11 @@
     });
 
     // Remove overlay from DOM after fade completes
-    overlay.addEventListener('transitionend', () => {
+    overlay.addEventListener('transitionend', (e) => {
+    // Only fire when the opacity transition ends, not any other property
+    if (e.propertyName === 'opacity') {
       overlay.remove();
+  }
     });
   </script>
 
